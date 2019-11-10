@@ -3,7 +3,7 @@ export const routerConf = [
     path: '/',
     component: '../layouts/layout',
     routes: [	
-      { path: '/home', component: './switch/index.js' },
+      { path: '/home', component: './home' },
       {
         path: '/dashboard',
         routes: [

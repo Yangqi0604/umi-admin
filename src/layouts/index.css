@@ -1,11 +1,11 @@
 .logo {
   height: 32px;
-  background: #eeeeee;
+  background: #284861;
   margin: 16px;
 }
 .ant-layout-sider{
 	background: white !important;
 }
 .ant-layout-sider-trigger{
-	background: #001529;
+	background:#b7bcc0;
 }
