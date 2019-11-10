@@ -9,3 +9,11 @@
 .ant-layout-sider-trigger{
 	background:#b7bcc0;
 }
+
+
+/*Header*/
+.header-box{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
+}
