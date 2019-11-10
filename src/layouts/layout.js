@@ -33,7 +33,6 @@ export default class layout extends Component {
             </Breadcrumb>*/}
             {this.props.children}
           </Content>
-          <Footer style={{ textAlign: 'center' }}>后台管理系统</Footer>
         </Layout>
       </Layout>
     )
