@@ -4,14 +4,14 @@ import { aliasConf } from './commons/aliasConf';
 // ref: https://umijs.org/config/
 export default {
   hash: true,
-  publicPath:'/static/dist/',
+  publicPath: '/static/dist/',
   treeShaking: true,
   plugins: pluginConf,
   routes: routerConf,
   alias: aliasConf,
-  cssLoaderOptions:{
-    localIdentName:'[local]'
-  },
+  cssLoaderOptions: {
+    localIdentName: '[local]'
+  }
   // extraBabelPlugins: [
   //   [
   //     'react-css-modules',
