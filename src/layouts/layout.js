@@ -45,7 +45,7 @@ export default class layout extends Component {
                     <Header style={{ background: '#fff', padding: 0 }} />
                     <Content style={{ margin: '24px 16px 0' }}>
                         <div style={{ padding: 24, background: '#fff', minHeight: 360,height:'100%' }}>
-                            <div className="box">123</div>
+                            
                         </div>
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
