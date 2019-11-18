@@ -2,7 +2,8 @@ export const routerConf = [
   {
     path: '/',
     component: '../layouts/layout',
-    routes: [	
+    routes: [
+      { path: '/', component: './home' },
       { path: '/home', component: './home' },
       {
         path: '/dashboard',
@@ -12,6 +13,12 @@ export const routerConf = [
           { path: '/dashboard/Workbench', component: './dashboard/Workbench' }
         ],
       },
+      {
+        path: '/game',
+        routes: [
+          { path: '/game/turntable', component: './game/turntable'}
+        ],
+      }
     ],
   },
 ];

@@ -34,6 +34,18 @@ const sidebarMenu = [
         name: '工作台',
       },
     ],
+  },
+  {
+    label: 'Game',
+    key: 'game',
+    name: 'Game',
+    icon: 'google',
+    child: [
+      {
+        key: 'turntable',
+        name: '命运之轮',
+      }
+    ],
   }
 ];
 
