@@ -171,7 +171,7 @@ export default class SiderBar extends React.Component {
           theme="light" mode="inline"
           onOpenChange={this.handleOpenChange}
           onSelect={this.handleSelect}
-          openKeys={this.props.collapse ? [] : this.state.openKeys}
+          defaultOpenKeys={this.props.collapse ? [] : this.state.openKeys}
           >
           {this.siderMenu}
         </Menu>
