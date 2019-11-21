@@ -2,6 +2,8 @@ import React, { Component, Suspense } from 'react'
 import {
     Card,
     Tabs,
+    ButtonGroup,
+    Button
 } from '@shopify/polaris';
 import Message from '../../comment/message'
 import { IndexSkeletonPage } from '../../comment/tagrouter';
@@ -41,6 +43,10 @@ export default class index extends Component {
         const PageComponent = tabs[selected].component;
         return (
             <div>
+                <ButtonGroup>
+                    <Button>Cancel</Button>
+                    <Button primary>Save</Button>
+                </ButtonGroup>
                 <Message message={this.state.message} />
                 <div style={{ marginTop: '2rem' }}>
                     <Card>

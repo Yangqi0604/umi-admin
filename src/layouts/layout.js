@@ -25,13 +25,20 @@ export default class layout extends Component {
       <AppProvider i18n={en}>
         <Frame>
           <Layout style={{ minHeight: '100vh' }}>
-            <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
+            <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}
+              style={{
+                overflow: 'auto',
+                height: '100vh',
+                position: 'fixed',
+                left: 0,
+              }}
+            >
               <div className="logo" />
               <Menu />
             </Sider>
-            <Layout>
+            <Layout style={{ marginLeft: 200 }}>
               <Header />
-              <Content style={{padding: '15px', margin: '10px 16px 0 16px', background: 'white' }}>
+              <Content style={{padding: '15px', margin: '10px 16px 0 16px', background: 'white', overflow: 'initial'  }}>
                 {/*<Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>User</Breadcrumb.Item>
               <Breadcrumb.Item>Bill</Breadcrumb.Item>

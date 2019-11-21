@@ -9,8 +9,12 @@
 .ant-layout-sider-trigger{
 	background:#b7bcc0;
 }
-
-
+.ant-menu-inline{
+	border-right: none !important;
+}
+.ant-layout-sider-children{
+    border-right: 1px solid #eee;
+}
 /*Header*/
 .header-box{
 	display: flex;
