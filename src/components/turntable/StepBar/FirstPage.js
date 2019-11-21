@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class index extends Component {
+export default class FirstPage extends Component {
     render() {
         return (
-            <div style={{height:'100%'}}>
-               123
+            <div>
+                123
             </div>
         )
     }

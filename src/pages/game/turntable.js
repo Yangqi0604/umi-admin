@@ -1,4 +1,4 @@
-import React, { Component,Suspense } from 'react'
+import React, { Component, Suspense } from 'react'
 import {
     Card,
     Tabs,
@@ -17,16 +17,16 @@ export default class index extends Component {
             },
             tabs: [
                 {
-                    id: 'home',
-                    content: 'Home',
-                    panelID: 'home-page',
-                    component: React.lazy(() => import('@turntable/homePageComponents')),
-                },
-                {
                     id: 'settings',
                     content: 'Settings',
                     panelID: 'settings-page',
                     component: React.lazy(() => import('@turntable/settingPageComponents')),
+                },
+                {
+                    id: 'home',
+                    content: 'Home',
+                    panelID: 'home-page',
+                    component: React.lazy(() => import('@turntable/homePageComponents')),
                 }
             ],
         };
@@ -42,7 +42,7 @@ export default class index extends Component {
         return (
             <div>
                 <Message message={this.state.message} />
-                <div style={{marginTop:'2rem'}}>
+                <div style={{ marginTop: '2rem' }}>
                     <Card>
                         <Tabs tabs={tabs} selected={selected} onSelect={this.handleTabChange}>
                             <Card.Section>
