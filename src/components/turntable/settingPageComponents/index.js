@@ -1,11 +1,29 @@
 import React, { Component } from 'react'
 import { Steps, Button, message } from 'antd';
 import FirstPage from '../StepBar/FirstPage'
+import SecondPage from '../StepBar/SecondPage'
+import ThirdPage from '../StepBar/Thirdpage'
+import FourPage from '../StepBar/FourPage'
 import './index.css'
 const { Step } = Steps;
 const FirstPagecontent = (
     <div>
         <FirstPage/>
+    </div>
+);
+const SecondPagecontent = (
+    <div>
+        <SecondPage/>
+    </div>
+);
+const ThirdPagecontent = (
+    <div>
+        <ThirdPage/>
+    </div>
+);
+const FourPagecontent = (
+    <div>
+        <FourPage/>
     </div>
 );
 const steps = [
@@ -15,11 +33,15 @@ const steps = [
     },
     {
         title: 'Second',
-        content: 'Second-content',
+        content: SecondPagecontent,
+    },
+    {
+        title: 'Third',
+        content: ThirdPagecontent,
     },
     {
         title: 'Last',
-        content: 'Last-content',
+        content: FourPagecontent,
     },
 ];
 export default class index extends Component {

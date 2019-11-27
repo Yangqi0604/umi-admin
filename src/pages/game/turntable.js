@@ -8,6 +8,7 @@ import {
 import Message from '../../comment/message'
 import { IndexSkeletonPage } from '../../comment/tagrouter';
 import lang from '@lang/en/turntable/config'
+import './style/game.css'
 export default class index extends Component {
     constructor(props) {
         super(props);
@@ -43,10 +44,11 @@ export default class index extends Component {
         const PageComponent = tabs[selected].component;
         return (
             <div>
-                <ButtonGroup>
-                    <Button>Cancel</Button>
-                    <Button primary>Save</Button>
-                </ButtonGroup>
+                <div className="savebox">
+                    <ButtonGroup>
+                        <Button primary>Save</Button>
+                    </ButtonGroup>
+                </div>
                 <Message message={this.state.message} />
                 <div style={{ marginTop: '2rem' }}>
                     <Card>

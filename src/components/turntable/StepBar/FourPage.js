@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class FirstPage extends Component {
+export default class FourPage extends Component {
     render() {
         return (
             <div>
-                123456
+                0000
             </div>
         )
     }

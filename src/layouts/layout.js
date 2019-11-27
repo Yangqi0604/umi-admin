@@ -24,19 +24,12 @@ export default class layout extends Component {
     return (
       <AppProvider i18n={en}>
         <Frame>
-          <Layout style={{ minHeight: '100vh' }}>
-            <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}
-              style={{
-                overflow: 'auto',
-                height: '100vh',
-                position: 'fixed',
-                left: 0,
-              }}
-            >
+        <Layout style={{ minHeight: '100vh' }}>
+            <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
               <div className="logo" />
               <Menu />
             </Sider>
-            <Layout style={{ marginLeft: 200 }}>
+            <Layout>
               <Header />
               <Content style={{padding: '15px', margin: '10px 16px 0 16px', background: 'white', overflow: 'initial'  }}>
                 {/*<Breadcrumb style={{ margin: '16px 0' }}>
@@ -47,6 +40,7 @@ export default class layout extends Component {
               </Content>
             </Layout>
           </Layout>
+
         </Frame>
       </AppProvider>
     )
