@@ -12,7 +12,7 @@ const sidebarMenu = [
   {
     label: '首页',
     key: 'home',
-    name:'首页',
+    name:'Home',
     icon: 'home',
   },
   {
@@ -23,15 +23,15 @@ const sidebarMenu = [
     child: [
       {
         key: 'analyze',
-        name: '分析页',
+        name: '路由1',
       },
       {
         key: 'monitor',
-        name: '监控页',
+        name: '路由2',
       },
       {
         key: 'Workbench',
-        name: '工作台',
+        name: '路由3',
       },
     ],
   },

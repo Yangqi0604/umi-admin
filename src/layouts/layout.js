@@ -26,7 +26,7 @@ export default class layout extends Component {
         <Frame>
         <Layout style={{ minHeight: '100vh' }}>
             <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
-              <div className="logo" />
+              <div className="logo">React</div>
               <Menu />
             </Sider>
             <Layout>
